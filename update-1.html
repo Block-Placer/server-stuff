@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SMP Expansion: World Border Update</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1d1a16;--panel:#2e2822;--panel2:#3a322a;--text:#f1ead9;--muted:#b9ad94;--grass:#5fae3d;--grass-d:#3f7a27;--gold:#f5c542;--red:#e0584b;--blue:#58b8e8;--bd:#0f0d0a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#e9dfc8;--panel:#fbf5e4;--panel2:#efe4c8;--text:#2a2218;--muted:#6b5e46;--grass:#4c9a2c;--grass-d:#356f1d;--gold:#a8780a;--red:#b83a2e;--blue:#1f78a8;--bd:#2a2218}}
+:root[data-theme="dark"]{color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'VT323',ui-monospace,Menlo,monospace;font-size:22px;line-height:1.35}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px 40px}
+h1,h2,h3{font-family:'Press Start 2P',ui-monospace,monospace;font-weight:400;line-height:1.5}
+.hero{text-align:center;padding:48px 16px 36px;background:linear-gradient(var(--panel),var(--bg));border-bottom:8px solid var(--grass-d);position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-16px;height:8px;background:var(--grass)}
+.tag{display:inline-block;background:var(--gold);color:#1d1a16;font-family:'Press Start 2P',monospace;font-size:11px;padding:6px 10px;border:3px solid var(--bd);margin-bottom:18px}
+h1{font-size:clamp(20px,5vw,38px);margin:0 0 14px;text-shadow:3px 3px 0 var(--bd)}
+.hero p{max-width:640px;margin:0 auto;color:var(--muted);font-size:24px}
+h2{font-size:clamp(14px,3vw,20px);margin:48px 0 18px;color:var(--grass);text-shadow:2px 2px 0 var(--bd)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:32px}
+.card{background:var(--panel);border:4px solid var(--bd);box-shadow:inset -4px -4px 0 var(--panel2),inset 4px 4px 0 rgba(255,255,255,.06);padding:18px}
+.stat b{display:block;font-family:'Press Start 2P',monospace;font-size:clamp(18px,4vw,26px);color:var(--gold);margin:8px 0}
+.stat span{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.card h3{font-size:12px;margin:0 0 10px;color:var(--text)}
+.card p{margin:0 0 8px}
+.card .meta{color:var(--muted);font-size:19px}
+.badge{display:inline-block;font-family:'Press Start 2P',monospace;font-size:9px;padding:4px 7px;border:3px solid var(--bd);margin-bottom:10px;color:#1d1a16}
+.c{background:var(--grass)}.p{background:var(--blue)}.r{background:var(--gold)}
+.rare{border-color:var(--gold)}
+.note{background:var(--panel2);border-left:8px solid var(--gold);padding:14px 16px;margin-top:18px}
+ul.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+ul.chips li{background:var(--panel2);border:3px solid var(--bd);padding:2px 10px}
+.cd{margin-top:14px;padding-top:12px;border-top:4px dashed var(--bd)}
+.cdt{font-family:'Press Start 2P',monospace;font-size:clamp(14px,3.6vw,20px);color:var(--grass);margin:6px 0}
+.cdl{color:var(--muted);font-size:19px}
+.cd.live .cdt{color:var(--gold)}
+footer{text-align:center;color:var(--muted);margin-top:48px;font-size:19px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <span class="tag">SMP UPDATE</span>
+  <h1>The World Border Is Expanding!</h1>
+  <p>More world to explore, new structures to find, and a fresh set of enchantments to hunt down. Pack your pickaxe.</p>
+</header>
+<main class="wrap">
+  <section class="stats">
+    <div class="card stat"><span>New world border</span><b>10,000 blocks</b><span>Plenty of fresh land to claim and explore.</span><div class="cd" data-t="2026-10-28T13:00:00Z" data-l="Expansion goes live"></div></div>
+    <div class="card stat"><span>New structures begin</span><b>5,000 blocks out</b><span>Head far from spawn to find them.</span></div>
+  </section>
+
+  <h2>New Structures</h2>
+  <p>Three structure datapacks are on the way. They generate only in newly explored chunks, so adventure beyond the old edges.</p>
+  <div class="grid">
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>Structory</h3>
+      <p>Atmospheric structures with light lore told through villagers: ruins, towers, cottages, graveyards, settlements, boats and more.</p>
+      <p class="meta">Mangrove Ruins hide deep in swamps. Taiga Ruins wait in colder climates. Witches brew something mysterious in the Old Manor, and a rare Graveyard can trap those who wander too far.</p></div>
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>Structory: Towers</h3>
+      <p>Biome-themed towers that fit their surroundings.</p>
+      <ul class="chips"><li>Outposts</li><li>Firetowers</li><li>Ocean monument pillars</li><li>Nether towers</li><li>End towers</li></ul></div>
+    <div class="card"><span class="badge c">ADDED</span><h3>Dungeons and Taverns</h3>
+      <p>Vanilla-friendly structures built to blend in with the base game: environmental builds like fire watch towers and taverns, plus dungeons like the Badland Miner Outpost and the Illager Hideout.</p>
+      <p class="meta">Level up the cartographer inside a tavern to apprentice, then move them anywhere you like to keep leveling and unlock new treasure charts. Structure loot also hides unique enchantments, found in places like shrines and graves, and leveling a librarian inside certain structures unlocks an exclusive trade.</p></div>
+  </div>
+  <div class="note">Vanilla Tweaks pack: confirmed too. Full list of tweaks coming soon.</div>
+
+  <h2>Enchantments &amp; Items</h2>
+  <div class="note"><b>Some enchantments unlock today!</b><div class="cd" data-t="2026-10-26T14:30:00Z" data-l="First enchantments arrive" style="border:0;padding:0;margin-top:6px"></div></div>
+  <p>Confirmed items are coming for sure. Possible ones may or may not make the cut. All can be found via the enchanting table, loot chests or villager trades, except the crafted items noted below.</p>
+  <div class="grid">
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>Smelting</h3><p>Pickaxe enchantment that auto-smelts ores as you mine them. Works with Hammer and Magnetic.</p></div>
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>Timber</h3><p>Axe enchantment that fells connected logs in one swing. Vanilla axes and logs only. Works with Magnetic.</p></div>
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>Hammer</h3><p>Three levels. Mines multiple blocks at once, like a hammer. Works with Smelting and Magnetic.</p></div>
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>Magnetic</h3><p>Tools and weapons auto-pickup mined blocks and loot straight into your inventory.</p></div>
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>XP Boost</h3><p>Three levels. Earn extra XP while using your tools and weapons.</p></div>
+    <div class="card"><span class="badge c">CONFIRMED</span><h3>Enchantment Extractor</h3><p>A craftable item that pulls enchantments off armor, tools and weapons so you can reuse them as enchanted books.</p></div>
+
+    <div class="card"><span class="badge p">POSSIBLE</span><h3>Agility</h3><p>Leggings enchantment, two levels. Raises your step height so you walk up blocks without jumping.</p></div>
+    <div class="card"><span class="badge p">POSSIBLE</span><h3>Thunder Strike</h3><p>Mace enchantment, three levels. Landing a charged attack calls down lightning.</p></div>
+    <div class="card"><span class="badge p">POSSIBLE</span><h3>Death Back Potion</h3><p>Drink it to teleport to your last death location. Craftable, and stacks to 16.</p></div>
+    <div class="card rare"><span class="badge r">POSSIBLE &middot; INSANELY RARE</span><h3>Soulbound</h3><p>Your item returns to you when you die. If it joins the SMP, it will be insanely rare, so treat any Soulbound item like treasure.</p></div>
+  </div>
+
+  <footer>See you past the old border. Happy exploring!</footer>
+</main>
+<script>
+(function(){
+var els=document.querySelectorAll('.cd');
+function fmt(ms){var s=Math.floor(ms/1000),d=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60),x=s%60,p=[];
+if(d)p.push(d+'d');if(d||h)p.push(h+'h');p.push(m+'m');p.push(String(x).padStart(2,'0')+'s');return p.join(' ');}
+els.forEach(function(el){
+var t=new Date(el.getAttribute('data-t')),lbl=el.getAttribute('data-l');
+var when;try{when=t.toLocaleString([],{weekday:'long',hour:'numeric',minute:'2-digit',timeZoneName:'short'});}catch(e){when=t.toString();}
+el.innerHTML='<div class="cdl">'+lbl+' in</div><div class="cdt"></div><div class="cdl">'+when+' (your time)</div>';
+el._t=t;el._o=el.querySelector('.cdt');
+});
+function tick(){var n=Date.now();els.forEach(function(el){var d=el._t-n;
+if(d<=0){el.classList.add('live');el._o.textContent='LIVE NOW!';}else{el._o.textContent=fmt(d);}});}
+tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
